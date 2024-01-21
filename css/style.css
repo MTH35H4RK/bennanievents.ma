@@ -524,3 +524,7 @@ input.form-check-input {
         top: 35%;
     }
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}

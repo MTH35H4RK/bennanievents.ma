@@ -8,6 +8,8 @@
     --gray-color: #aaaaaa;
     --font-1: 'Cormorant Garamond', serif;
     --font-2: 'Quicksand', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 html, body {
     max-width: 100%;

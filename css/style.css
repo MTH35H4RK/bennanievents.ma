@@ -9,7 +9,10 @@
     --font-1: 'Cormorant Garamond', serif;
     --font-2: 'Quicksand', sans-serif;
 }
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     background-color: var(--dark-bg);
 }
@@ -524,7 +527,4 @@ input.form-check-input {
         top: 35%;
     }
 }
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
+

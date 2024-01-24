@@ -3,14 +3,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['action'])) {
         $name = $_POST["name"];
         $email = $_POST["email"];
+        $phone = $_POST["phone"];
         $comment = $_POST["comment"];
-        $subject = "Subject Comment Email"; // Replace your Subject Here
-        $to = "recipient@example.com"; // Replace your Email Here
+        $subject = "$name sent you a message !"; // Replace your Subject Here
+        $to = "aymanbouaricha1950@gmail.com"; // Replace your Email Here
         $headers = "From: $email\r\n";
         $headers .= "Reply-To: $email\r\n";
         $headers .= "Content-type: text/html\r\n";
 
-        $messageBody = "Name: $name<br>Email: $email<br>Message: $message";
+        $messageBody = "Name: $name<br>Email: $email<br>Phone: $phone<br>Message: $message";
 
         if (mail($to, $subject, $messageBody, $headers)) {
             echo "success"; // Send response Success
@@ -21,14 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = $_POST["name"];
         $email = $_POST["email"];
         $message = $_POST["message"];
-        $subject = "Subject Email"; // Replace your Subject Here
+        $phone = $_POST["phone"];
+        $subject = "$name sent you a message !"; // Replace your Subject Here
 
-        $to = "recipient@example.com"; // Replace your Email Here
+        $to = "aymanbouaricha1950@gmail.com"; // Replace your Email Here
         $headers = "From: $email\r\n";
         $headers .= "Reply-To: $email\r\n";
         $headers .= "Content-type: text/html\r\n";
 
-        $messageBody = "Name: $name<br>Email: $email<br>Message: $message";
+        $messageBody = "Name: $name<br>Email: $email<br>Phone: $phone<br>Message: $message";
 
         if (mail($to, $subject, $messageBody, $headers)) {
             echo "success"; // Send response Success

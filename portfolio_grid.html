@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/vendor/solid.css">
     <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Alexander Durham - Portfolio Grid</title>
+    <title>Nos réalisations- Bennani Events</title>
+    <link rel="shortcut icon" href="image/favicon.png">
 </head>
 
 <body>
@@ -23,9 +24,10 @@
     <script src="js/swiper-script.js"></script>
     <script src="js/submit-form.js"></script>
 
-    <!-- Header -->
-    <section class="bg-dark-color sticky-top">
-        <div class="r-container">
+       <!-- Header -->
+       <iframe id="myIframe" src="header/index.html" scrolling="no"></iframe>
+       <section class="bg-dark-color sticky-top">
+        <div class="headerz" id="r-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="logo-container">
@@ -39,51 +41,24 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-1 gap-lg-4">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Accueil </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
+                                <a class="nav-link" href="about.html">À propos</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" role="button"
-                                    data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                    Portfolio
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="portfolio_standard.html">Portfolio Standard</a>
-                                    </li>
-                                    <li><a class="dropdown-item active" href="portfolio_grid.html">Portfolio Grid</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside" aria-expanded="false">
-                                    Pages
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Services</a></li>
-                                    <li><a class="dropdown-item" href="pricing_plan.html">Pricing Plans</a></li>
-                                    <li class="nav-item dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Blog
-                                        </a>
-                                        <ul class="dropdown-menu m-0">
-                                            <li><a class="dropdown-item" href="single_blog.html">Single Blog</a></li>
-                                            <li><a class="dropdown-item" href="blog_post.html">Blog Post</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-                                </ul>
+                         
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Nos Services</a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact Us</a>
+                                <a class="nav-link active" aria-current="page"  href="portfolio_grid.html">Nos réalisations </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Nous contacter</a>
                             </li>
                         </ul>
                         <div>
-                            <a type="button" href="" class="font-2">BOOK NOW</a>
+                            <a type="button" href="" class="font-2">Demander un devis </a>
                         </div>
                     </div>
                 </div>
@@ -91,18 +66,17 @@
         </div>
     </section>
     <!-- End Of Header -->
-
     <main>
-        <section class="position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
+        <section class="position-relative" style="background-image: url(image/1920x900port.png);">
             <div class="r-container">
                 <div class="image-overlay-2"></div>
                 <div class="d-flex flex-column justify-content-center align-items-center text-center position-relative min-vh-65"
                     style="z-index: 2;">
-                    <h1 class="text-white font-1">PORTFOLIO</h1>
+                    <h1 class="text-white font-1">Nos réalisations</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Portfolio Grid</li>
+                            <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Nos réalisations</li>
                         </ol>
                     </nav>
                 </div>
@@ -111,43 +85,169 @@
 
         <section class="section">
             <div class="r-container">
-                <div class="row row-cols-1 row-cols-lg-3">
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
+                <div class="row row-cols-1 row-cols-lg-4">
+                    <a class="image-gallery" href="image/1.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/1.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Rencontres des Andalouses</span>
+                                <p class="font-2 text-gray">35ème édition du festival « Rencontres des Andalouses de Chefchaouen »</p>
+                            </div>
+                        </div>
                     </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
-                    <a class="col mb-4" href="image/dummy-img-400x400.jpg" data-fslightbox="gallery">
-                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid img-filter-1">
-                    </a>
+                    <a class="image-gallery" href="image/2.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/2.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Model des nations unies</span>
+                                <p class="font-2 text-gray">6 ème édition du model des nations unies.</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/3.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/3.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Festival d’été de Tanger</span>
+                                <p class="font-2 text-gray">1 ère édition du festival d’été de Tanger, FTTSES</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/4.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/4.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white"> Quatrième Conférence Régionale</span>
+                                <p class="font-2 text-gray">Conférence Régionale, PAM</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/5.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/5.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Motherson</span>
+                                <p class="font-2 text-gray">Motherson Tanger</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/6.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/6.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Festival MAYAZINE</span>
+                                <p class="font-2 text-gray">3ème édition du festival Mayazine</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/7.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/7.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Remise des diplômes ENCGT</span>
+                                <p class="font-2 text-gray">Cérémonie de remises des diplômes-ENCGT 2022</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/8.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/8.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">ITKANE 4.0</span>
+                                <p class="font-2 text-gray">Programme d’excellence industrielle SIANA.</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/9.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/9.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">SOIRÉE D’INTÉGRATION</span>
+                                <p class="font-2 text-gray">SOIRÉE D’INTÉGRATION ENCGT</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/10.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/10.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Congrès médical de pne</span>
+                                <p class="font-2 text-gray">20ème édition du congrès médical de pneumologie, Afmapath.</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/11.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/11.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Remise des diplômes ENCGT</span>
+                                <p class="font-2 text-gray">	Cérémonie de remise des diplômes-ENCG de Tanger 2023</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/12.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/12.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Festival d’été de Chmaala</span>
+                                <p class="font-2 text-gray">	1ère édition du festival d’été de Chmaala, ACCAC.</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/13.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/13.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">	Soirée musicale</span>
+                                <p class="font-2 text-gray">Soirée musicale à Hilton</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/14.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/14.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Festival du Cinéma Rif</span>
+                                <p class="font-2 text-gray">5ème édition du festival du cinéma Rif de Tétouan- AAC</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/15.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/15.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Nostalgia au Nord</span>
+                                <p class="font-2 text-gray">1ère édition du concert Nostalgia avec HOE, Tétouan.</p>
+                            </div>
+                        </div>
+                    </a><a class="image-gallery" href="image/16.jpg" data-fslightbox="gallery">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/16.jpg" alt="" class="img-fluid img-filter-1">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Forum Méditerranéen de DV.</span>
+                                <p class="font-2 text-gray">3ème édition du forum méditerranéen de développement durable – Tétouan</p>
+                            </div>
+                        </div>
+                  
                 </div>
             </div>
             </div>
@@ -155,7 +255,7 @@
 
         <section class="section">
             <div class="r-container position-relative"
-                style="background-image: url(image/dummy-img-1920x900.jpg); background-size: cover; background-position: center;">
+                style="background-image: url(image/1920x900port2.png); background-size: cover; background-position: center;">
                 <div class="image-overlay-2"></div>
                 <div class="d-flex flex-column justify-content-center align-items-center text-center position-relative section"
                     style="z-index: 2;">
@@ -163,10 +263,10 @@
 
                     </div>
                     <div class="pb-4" style="max-width: 968px;">
-                        <h2 class="font-1 fw-semibold text-white lh-1 ">Capture Your Happy Moments in Our Studio</2>
+                        <h2 class="font-1 fw-semibold text-white lh-1 ">Créez des événements merveilleux avec Bennani.</2>
                     </div>
                     <div class="mt-3">
-                        <a type="button" href="" class="font-2">LEARN MORE</a>
+                        <a type="button" href="contact.html" class="font-2">Contactez Nous</a>
                     </div>
                 </div>
             </div>
@@ -174,6 +274,7 @@
 
     </main>
 
+  
     <!-- Footer -->
     <footer>
         <section class="px-4">
@@ -185,39 +286,42 @@
                             <div style="max-width: 150px;">
                                 <img src="image/logo.png" alt="" class="img-fluid">
                             </div>
-                            <span class="text-gray font-2">In euismod dolor non justo vestibulum laoreet.</span>
+                            <span class="text-gray font-2">Créativité, Qualité, Événements, Innovation, Expertise.
+
+                            </span>
                         </div>
                     </div>
                     <div class="col">
-                        <div
-                            class="d-flex flex-column justify-content-center align-items-lg-end align-items-center h-100 gap-4">
+                        <div class="d-flex flex-column justify-content-center align-items-lg-end align-items-center h-100 gap-4">
                             <div class="d-flex flex-row gap-3 flex-wrap justify-content-center justify-content-lg-end">
-                                <a href="" class="text-gray font-2">Home</a>
-                                <a href="" class="text-gray font-2">About</a>
-                                <a href="" class="text-gray font-2">Portfolio</a>
-                                <a href="" class="text-gray font-2">Services</a>
-                                <a href="" class="text-gray font-2">Blog</a>
-                                <a href="" class="text-gray font-2">Contact Us</a>
+                                <a href="index.html" class="text-gray font-2">Accueil </a>
+                                <a href="about.html" class="text-gray font-2">À propos </a>
+                                
+                                <a href="services.html" class="text-gray font-2">Nos Services</a>
+                                <a href="portfolio_grid.html" class="text-gray font-2">Nos réalisations</a>
+                                <a href="blog_post.html" class="text-gray font-2">Blog</a>
+                                <a href="contact.html" class="text-gray font-2">Nous contacter </a>
                             </div>
                             <div class="social mb-3">
                                 <div class="social-item">
-                                    <a href="www.example.com">
+                                    <a href="https://fb.com/BENNANIEvents">
                                         <i class="fa-brands fa-facebook"></i>
                                     </a>
                                 </div>
                                 <div class="social-item">
-                                    <a href="#">
-                                        <i class="fa-brands fa-twitter"></i>
+                                    <a href="https://www.instagram.com/bennani.events/">
+                                        <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </div>
                                 <div class="social-item">
-                                    <a href="#">
-                                        <i class="fa-brands fa-behance"></i>
+                                    <a
+                                        href="https://www.linkedin.com/in/mehdi-bennani-9951802a9/?originalSubdomain=ma">
+                                        <i class="fa-brands fa-linkedin"></i>
                                     </a>
                                 </div>
                                 <div class="social-item">
-                                    <a href="#">
-                                        <i class="fa-brands fa-dribbble"></i>
+                                    <a href="https://www.youtube.com/@bennanievents388">
+                                        <i class="fa-brands fa-youtube"></i>
                                     </a>
                                 </div>
                             </div>
@@ -229,12 +333,14 @@
         <section>
             <div class="r-container py-4 px-4">
                 <div class="text-center">
-                    <span class="text-gray">Copyright 2022 © All Right Reserved Design by Rometheme</span>
+                    <span class="text-gray">Copyright 2024 © All Right Reserved Design by House Of Events</span>
                 </div>
             </div>
         </section>
     </footer>
     <script src="js/vendor/fslightbox.js"></script>
+    <script src="header.js"></script>
+
 </body>
 
 </html>

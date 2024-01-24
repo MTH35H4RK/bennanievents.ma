@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,14 @@
     <link rel="stylesheet" href="css/vendor/solid.css">
     <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Alexander Durham - About</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+
+
+    <title>Bennani Events - À propos </title>
+    <link rel="shortcut icon" href="image/favicon.png">
 </head>
 
 <body>
@@ -24,8 +31,9 @@
     <script src="js/submit-form.js"></script>
 
     <!-- Header -->
+    <iframe id="myIframe" src="header/index.html" scrolling="no"></iframe>
     <section class="bg-dark-color sticky-top">
-        <div class="r-container">
+        <div class="headerz" id="r-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <div class="logo-container">
@@ -39,50 +47,26 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav mx-auto mb-2 mb-lg-0 font-1 gap-lg-4">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">Accueil</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="about.html">About</a>
+                                <a class="nav-link active" aria-current="page" href="about.html">À propos</a>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside" aria-expanded="false">
-                                    Portfolio
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="portfolio_standard.html">Portfolio Standard</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="portfolio_grid.html">Portfolio Grid</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    data-bs-auto-close="outside" aria-expanded="false">
-                                    Pages
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
-                                    <li><a class="dropdown-item" href="services.html">Services</a></li>
-                                    <li><a class="dropdown-item" href="pricing_plan.html">Pricing Plans</a></li>
-                                    <li class="nav-item dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Blog
-                                        </a>
-                                        <ul class="dropdown-menu m-0">
-                                            <li><a class="dropdown-item" href="single_blog.html">Single Blog</a></li>
-                                            <li><a class="dropdown-item" href="blog_post.html">Blog Post</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="dropdown-item" href="404.html">404 Page</a></li>
-                                </ul>
+
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Nos Services </a>
                             </li>
                             <li class="nav-item">
-                                <a href="contact.html" class="nav-link">Contact Us</a>
+                                <a class="nav-link" href="portfolio_grid.html">Nos réalisations </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Nous contacter</a>
                             </li>
                         </ul>
                         <div>
-                            <a type="button" href="" class="font-2">BOOK NOW</a>
+                            <a type="button" href="" class="font-2">Demander un devis </a>
                         </div>
                     </div>
                 </div>
@@ -92,16 +76,19 @@
     <!-- End Of Header -->
 
     <main>
-        <section class="position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
+        <section class="position-relative" id="background-section">
+            <div class="background-image" id="bg-image-1" style="background-image: url('image/1920x900.png');"></div>
+            <div class="background-image" id="bg-image-2" style="background-image: url('image/slide2.png');"></div>
+            <div class="background-image" id="bg-image-3" style="background-image: url('image/slide3.png');"></div>
             <div class="r-container">
                 <div class="image-overlay-2"></div>
                 <div class="d-flex flex-column justify-content-center align-items-center text-center position-relative min-vh-65"
                     style="z-index: 2;">
-                    <h1 class="text-white font-1">ABOUT ME</h1>
+                    <h1 class="text-white font-1">Découvrez l'univers de Bennani Évents</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">About Me</li>
+                            <li class="breadcrumb-item"><a href="#">Acceuil</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">A propos</li>
                         </ol>
                     </nav>
                 </div>
@@ -114,43 +101,60 @@
                     <div class="col mb-4">
                         <div class="d-flex flex-column align-items-center text-center">
                             <div class="mb-4">
-                                <img src="image/icon2.png" alt="" class="img-fluid icon-box">
+                                <img src="image/SONO.png" alt="" class="img-fluid icon-box">
                             </div>
-                            <h5 class="text-white font-1 fs-3">Company Profile</h5>
-                            <p class="text-gray font-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Ut elit tellus.</p>
+                            <h5 class="text-white font-1 fs-3">Sonorisation d'exception</h5>
+                            <p class="text-gray font-2">Notre service de sonorisation utilise des équipements de marques
+                                leaders telles que Das Audio et Yamaha, assurant une expérience auditive de qualité
+                                supérieure. Des micros de précision aux systèmes de diffusion haut de gamme, chaque son
+                                est ajusté pour une clarté et une résonance optimales.
+
+
+                            </p>
                         </div>
                     </div>
                     <div class="col mb-4">
                         <div class="d-flex flex-column align-items-center text-center">
                             <div class="mb-4">
-                                <img src="image/icon3.png" alt="" class="img-fluid icon-box">
+                                <img src="image/LIGHT.png" alt="" class="img-fluid icon-box">
                             </div>
-                            <h5 class="text-white font-1 fs-3">Model Photoshot</h5>
-                            <p class="text-gray font-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Ut elit tellus.</p>
+                            <h5 class="text-white font-1 fs-3">Eclairage captivant
+                            </h5>
+                            <p class="text-gray font-2">L'expertise de BENNANI Events en installations scéniques est
+                                exhaustive, englobant des écrans LED de grande dimension pour une visibilité
+                                exceptionnelle, et des structures modulaires pour une flexibilité et une esthétique
+                                maximales, adaptées à tout type d'événement.
+
+                            </p>
                         </div>
                     </div>
                     <div class="col mb-4">
                         <div class="d-flex flex-column align-items-center text-center">
                             <div class="mb-4">
-                                <img src="image/icon4.png" alt="" class="img-fluid icon-box">
+                                <img src="image/scene.png" alt="" class="img-fluid icon-box">
                             </div>
-                            <h5 class="text-white font-1 fs-3">Videography</h5>
-                            <p class="text-gray font-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Ut elit tellus.</p>
+                            <h5 class="text-white font-1 fs-3">Installation Scénique
+                            </h5>
+                            <p class="text-gray font-2">L'expertise de BENNANI Events en installations scéniques est
+                                exhaustive, englobant des écrans LED de grande dimension pour une visibilité
+                                exceptionnelle, et des structures modulaires pour une flexibilité et une esthétique
+                                maximales, adaptées à tout type d'événement.
+                            </p>
                         </div>
                     </div>
                     <div class="col mb-4">
                         <div class="d-flex flex-column align-items-center text-center">
                             <div class="mb-4">
-                                <img src="image/icon1.png" alt="" class="img-fluid icon-box">
+                                <img src="image/DECO.png" alt="" class="img-fluid icon-box">
                             </div>
-                            <h5 class="text-white font-1 fs-3">Wedding & Prewedding</h5>
-                            <p class="text-gray font-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Ut elit tellus.</p>
+                            <h5 class="text-white font-1 fs-3">Organisation d'Événements</h5>
+                            <p class="text-gray font-2">
+                            </p>
                         </div>
                     </div>
+
+
+
                 </div>
             </div>
         </section>
@@ -160,61 +164,337 @@
                 <div class="row row-cols-1 row-cols-lg-2 position-relative w-100  p-0 m-0" style="z-index: 2;">
                     <div class="col p-0 mb-3">
                         <div class="divider mb-3">
-                            <h6 class="text-white font-2 divider-element">SOMETHINGS ABOUT ME</h6>
+                            <h6 class="text-white font-2 divider-element">Qui est Bennani Mehdi ?</h6>
                         </div>
                         <div class="pb-4">
-                            <h2 class="font-1 fw-semibold text-white lh-1 ">I'm Professional Photography</h2>
+                            <h3 class="font-1 fw-semibold text-white lh-1 ">Visionnaire et PDG de Bennani Events</h3>
                         </div>
                         <p class="text-gray font-2 py-3">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales at nunc quis
-                            semper.
+                            En tant que fondateur et PDG de Bennani Events, Bennani Mehdi incarne l'esprit visionnaire
+                            qui guide notre entreprise vers l'excellence depuis sa création. Diplômé en audiovisuel avec
+                            une décennie d'expérience dans l'industrie, Bennani Mehdi apporte une expertise inégalée à
+                            la sonorisation, à l'éclairage et à la création d'ambiances uniques. Sa vision stratégique a
+                            permis à Bennani Events de se positionner en tant que leader innovant dans le domaine de
+                            l'événementiel.
                         </p>
                         <div class="border-bottom border-secondary border-1 border-opacity-25 ">
                             <div class="d-flex flex-column mt-3 mb-3">
                                 <div class="social mb-3">
                                     <div class="social-item">
-                                        <a href="www.example.com">
+                                        <a href="https://fb.com/BENNANIEvents">
                                             <i class="fa-brands fa-facebook"></i>
                                         </a>
                                     </div>
                                     <div class="social-item">
-                                        <a href="#">
-                                            <i class="fa-brands fa-twitter"></i>
+                                        <a href="https://www.instagram.com/bennani.events/">
+                                            <i class="fa-brands fa-instagram"></i>
                                         </a>
                                     </div>
                                     <div class="social-item">
-                                        <a href="#">
-                                            <i class="fa-brands fa-behance"></i>
+                                        <a
+                                            href="https://www.linkedin.com/in/mehdi-bennani-9951802a9/?originalSubdomain=ma">
+                                            <i class="fa-brands fa-linkedin"></i>
                                         </a>
                                     </div>
                                     <div class="social-item">
-                                        <a href="#">
-                                            <i class="fa-brands fa-dribbble"></i>
+                                        <a href="https://www.youtube.com/@bennanievents388">
+                                            <i class="fa-brands fa-youtube"></i>
                                         </a>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
                         <div class="d-flex flex-column py-2 gap-3  mt-3">
-                            <span class="accent-color font-2" style="letter-spacing: 2px;">MY AWARDS</span>
+                            <span class="accent-color font-2" style="letter-spacing: 2px;">EVENEMENT REALISE:
+                            </span>
                             <div class="d-flex flex-column gap-3">
                                 <div class="d-flex flex-row gap-3 font-2 align-items-center">
                                     <i class="fa-solid fa-angles-right accent-color"></i>
-                                    <span class="text-gray">International Photography Awards</span>
+                                    <span class="text-gray">Festival d'été de Chmaala </span>
                                 </div>
                                 <div class="d-flex flex-row gap-3 font-2 align-items-center">
                                     <i class="fa-solid fa-angles-right accent-color"></i>
-                                    <span class="text-gray">Sony World Photography Awards 2021</span>
+                                    <span class="text-gray">Nostalgia Tetouan</span>
                                 </div>
                                 <div class="d-flex flex-row gap-3 font-2 align-items-center">
                                     <i class="fa-solid fa-angles-right accent-color"></i>
-                                    <span class="text-gray">The National Geographic Photography Contest</span>
+                                    <span class="text-gray">Festival Chefchaouen du Film</span>
+                                </div>
+                                <div class="d-flex flex-row gap-3 font-2 align-items-center">
+                                    <i class="fa-solid fa-angles-right accent-color"></i>
+                                    <span class="text-gray">Congrès Médical des gynécologues a Tétouan</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col p-0 mb-3">
-                        <img src="image/dummy-img-600x700.jpg" alt="" class="img-fluid">
+                        <img src="image/600x700.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--fin MEHDI-->
+        <section class="py-5 position-relative">
+            <div class="r-container">
+                <div class="divider mb-3 center-text">
+                    <h6 class="text-white font-2 deeev">Notre Vision et mission </h6><br><br>
+                </div>
+                <BR><BR>
+                <div class="r-container">
+                    <div class="row row-cols-1 row-cols-lg-3 w-100">
+                        <div class="col mb-3">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <div class="mb-3">
+                                    <img src="image/vision.png" alt="" class="img-fluid icon-box">
+                                </div>
+                                <h5 class="text-white font-1 fs-3">Vision </h5>
+                                <p class="text-gray font-2">Bennani Events aspire à être le pionnier de l'excellence
+                                    événementielle en fusionnant l'art de la sonorisation et de l'éclairage pour créer
+                                    des expériences uniques, mémorables et inégalées.
+
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <div class="mb-3">
+                                    <img src="image/mission.png" alt="" class="img-fluid icon-box">
+                                </div>
+                                <h5 class="text-white font-1 fs-3">Mission
+                                </h5>
+                                <p class="text-gray font-2">Notre mission est d'élever chaque événement au-delà des
+                                    attentes, en offrant une expertise audiovisuelle de pointe, une créativité
+                                    exceptionnelle et un service client personnalisé, pour que chaque moment devienne
+                                    une œuvre d'art sensorielle.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col mb-3">
+                            <div class="d-flex flex-column align-items-center text-center">
+                                <div class="mb-3">
+                                    <img src="image/value.png" alt="" class="img-fluid icon-box">
+                                </div>
+                                <h5 class="text-white font-1 fs-3">Valeurs
+                                </h5>
+                                <p class="text-gray font-2">Chez Bennani Events, nous sommes guidés par l'innovation,
+                                    l'intégrité, la créativité et l'engagement envers l'excellence. Nous mettons
+                                    l'accent sur la satisfaction client, la qualité intransigeante et la recherche
+                                    constante de perfection, assurant ainsi que chaque projet reflète notre dévouement à
+                                    l'art de l'événementiel.
+
+                                </p>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="r-container">
+                <div class="row row-cols-1 row-cols-lg-2 w-100">
+                    <div class="col mb-4">
+                        <div class="d-flex flex-column h-100 justify-content-center">
+                            <div class="divider mb-3" style="width: 280px;">
+                                <h6 class="text-white font-2 divider-element">NOTRE HISTOIRE</h6>
+                            </div>
+                            <div class="pb-4">
+                                <h2 class="font-1 fw-semibold text-white lh-1 ">Prestataire et Organisateur d’évènement
+                                </h2>
+                            </div>
+                            <p class="text-gray font-2 py-3">
+                                Il y a une décennie, à Tétouan, Bennani Mehdi, a transformé sa passion en une vision
+                                ambitieuse : créer des expériences événementielles inoubliables. Ainsi naquit Bennani
+                                Events, une société vouée à l’événementiel.
+                                Guidée par la vision de son fondateur, Bennani Events n'est pas simplement une
+                                entreprise, mais une histoire d'engagement envers la qualité, de créativité sans bornes
+                                et d'événements transformés en moments magiques. Aujourd'hui, Bennani Events continue de
+                                tracer son chemin, écrivant chaque jour une nouvelle page de son histoire, où la passion
+                                et l'innovation illuminent chaque occasion.
+
+                            </p>
+                            <div class="d-flex flex-column py-2 gap-3  mt-3">
+                                <span class="accent-color font-2" style="letter-spacing: 2px;">Nos expériences:
+                                </span>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex flex-row gap-3 font-2 align-items-center">
+                                        <i class="fa-solid fa-angles-right accent-color"></i>
+                                        <span class="text-gray">20ème édition du congrès médical de pneumologie,
+                                            Afmapath. </span>
+                                    </div>
+                                    <div class="d-flex flex-row gap-3 font-2 align-items-center">
+                                        <i class="fa-solid fa-angles-right accent-color"></i>
+                                        <span class="text-gray">1ère édition du festival d’été de Chmaala, ACCAC.</span>
+                                    </div>
+                                    <div class="d-flex flex-row gap-3 font-2 align-items-center">
+                                        <i class="fa-solid fa-angles-right accent-color"></i>
+                                        <span class="text-gray">1ère édition du concert « Nostalgia au Nord », House Of
+                                            Events.</span>
+                                    </div>
+                                    <div class="d-flex flex-row gap-3 font-2 align-items-center">
+                                        <i class="fa-solid fa-angles-right accent-color"></i>
+                                        <span class="text-gray">3ème édition du forum méditerranéen de Tétouan pour les
+                                            objectifs de développement durable.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <BR><BR>
+                            <div>
+                                <a type="button" href="portfolio_grid.html" class="font-2">Nos réalisations</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col position-relative">
+                        <div class="w-75">
+                            <img src="image/600x800.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="w-50 image-absolute-1 shadow">
+                            <img src="image/600x8002.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section bg-secondary-dark">
+            <div class="r-container">
+                <div class="d-flex flex-lg-row flex-column-reverse w-100 m-0">
+                    <div class="col border-left-style pe-lg-4">
+                        <div class="p-3">
+                            <img src="image/600x800.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col p-3 mb-4">
+                        <div class="d-flex flex-column justify-content-center h-100">
+                            <div class="divider mb-3" style="width: 280px;">
+                                <h6 class="text-white font-2 divider-element">NOS COMPETENCE</h6>
+                            </div>
+                            <div class="pb-4">
+                                <h2 class="font-1 fw-semibold text-white lh-1 ">La Magie de l'Événementiel</h2>
+                            </div>
+                            <p class="text-gray font-2 py-3">
+                                Chez Bennani Évents, notre expertise repose sur des compétences solides et une passion
+                                inébranlable. Nous excellons dans plusieurs domaines, mettant en œuvre notre
+                                savoir-faire pour assurer des expériences exceptionnelles à chaque événement.
+                            </p>
+                            <div class="d-flex flex-column gap-4">
+                                <div class="r-progress w-75" style="--value:80;">
+                                    <span class="text-white font-2">Sonorisation </span>
+                                    <div class="progress-container mt-2">
+                                        <div class="r-progress-bar percentage-label">
+                                            <div class="progress-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="r-progress w-75" style="--value:85;">
+                                    <span class="text-white font-2">Éclairage </span>
+                                    <div class="progress-container mt-2">
+                                        <div class="r-progress-bar percentage-label">
+                                            <div class="progress-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="r-progress w-75" style="--value:75;">
+                                    <span class="text-white font-2">Location de Matériel </span>
+                                    <div class="progress-container mt-2">
+                                        <div class="r-progress-bar percentage-label">
+                                            <div class="progress-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="r-progress w-75" style="--value:90;">
+                                    <span class="text-white font-2">Organisation d'Événements
+                                    </span>
+                                    <div class="progress-container mt-2">
+                                        <div class="r-progress-bar percentage-label">
+                                            <div class="progress-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row row-cols-1 row-cols-lg-2 w-100 m-0">
+                <div class="col p-0">
+                    <a class="image-gallery" href="portfolio_grid.html">
+                        <div class="image-gallery-container">
+                            <div class="image-gallery__image">
+                                <img src="image/400x400PORT.png" alt="" class="img-fluid w-100">
+                            </div>
+                            <div class="image-gallery__content">
+                                <span class="font-1 fs-3 text-white">Festival RIF Du Film Amazigh</span>
+                                <p class="font-2 text-gray"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col p-0">
+                    <div class="row row-cols-1 row-cols-lg-2 w-100 m-0">
+                        <div class="col p-0">
+                            <a class="image-gallery" href="portfolio_grid.html">
+                                <div class="image-gallery-container">
+                                    <div class="image-gallery__image">
+                                        <img src="image/CHMAALA.jpg" alt="" class="img-fluid w-100">
+                                    </div>
+                                    <div class="image-gallery__content">
+
+                                        <span class="font-1 fs-3 text-white">Festival d'été de Chmaala</span>
+                                        <p class="font-2 text-gray"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-0">
+                            <a class="image-gallery" href="portfolio_grid.html">
+                                <div class="image-gallery-container">
+                                    <div class="image-gallery__image">
+                                        <img src="image/ENCG.jpg" alt="" class="img-fluid w-100">
+                                    </div>
+                                    <div class="image-gallery__content">
+                                        <span class="font-1 fs-3 text-white">La Soirée d'intégration des étudiants de
+                                            L'encg de Tanger</span>
+                                        <p class="font-2 text-gray"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-0">
+                            <a class="image-gallery" href="portfolio_grid.html">
+                                <div class="image-gallery-container">
+                                    <div class="image-gallery__image">
+                                        <img src="image/Nostalgia.png" alt="" class="img-fluid w-100">
+                                    </div>
+                                    <div class="image-gallery__content">
+                                        <span class="font-1 fs-3 text-white">Nostalgia Tetouan</span>
+                                        <p class="font-2 text-gray"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col p-0">
+                            <a class="image-gallery" href="portfolio_grid.html">
+                                <div class="image-gallery-container">
+                                    <div class="image-gallery__image">
+                                        <img src="image/RIF.jpg" alt="" class="img-fluid w-100">
+                                    </div>
+                                    <div class="image-gallery__content">
+                                        <span class="font-1 fs-3 text-white">Festival RIF Du Film Amazigh</span>
+                                        <p class="font-2 text-gray"></p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -222,6 +502,9 @@
 
         <section class="py-5 position-relative">
             <div class="r-container">
+                <div class="divider mb-3 center-text">
+                    <h6 class="text-white font-2 deeev">Nos références:</h6><br><br>
+                </div>
                 <div class="row row-cols-1 row-cols-lg-4 position-relative">
                     <div class="col mb-3 mb-lg-0">
                         <div class="d-flex flex-column justify-content-center align-items-center">
@@ -251,217 +534,109 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="row row-cols-1 row-cols-lg-2 w-100 m-0">
-                <div class="col p-0">
-                    <a class="image-gallery" href="#">
-                        <div class="image-gallery-container">
-                            <div class="image-gallery__image">
-                                <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid w-100">
-                            </div>
-                            <div class="image-gallery__content">
-                                <span class="font-1 fs-3 text-white">Woman In The Forest</span>
-                                <p class="font-2 text-gray">Vivamus nec mauris sed</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col p-0">
-                    <div class="row row-cols-1 row-cols-lg-2 w-100 m-0">
-                        <div class="col p-0">
-                            <a class="image-gallery" href="#">
-                                <div class="image-gallery-container">
-                                    <div class="image-gallery__image">
-                                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid w-100">
-                                    </div>
-                                    <div class="image-gallery__content">
-                                        <span class="font-1 fs-3 text-white">Nature Mental Health</span>
-                                        <p class="font-2 text-gray">Mauris laoreet laoreet tincidunt</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col p-0">
-                            <a class="image-gallery" href="#">
-                                <div class="image-gallery-container">
-                                    <div class="image-gallery__image">
-                                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid w-100">
-                                    </div>
-                                    <div class="image-gallery__content">
-                                        <span class="font-1 fs-3 text-white">Sexy Beautiful Redhead Girl</span>
-                                        <p class="font-2 text-gray">Pellentesque ornare turpis turpis</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col p-0">
-                            <a class="image-gallery" href="#">
-                                <div class="image-gallery-container">
-                                    <div class="image-gallery__image">
-                                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid w-100">
-                                    </div>
-                                    <div class="image-gallery__content">
-                                        <span class="font-1 fs-3 text-white">Beauty American Girl</span>
-                                        <p class="font-2 text-gray">Etiam in posuere turpis</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col p-0">
-                            <a class="image-gallery" href="#">
-                                <div class="image-gallery-container">
-                                    <div class="image-gallery__image">
-                                        <img src="image/dummy-img-400x400.jpg" alt="" class="img-fluid w-100">
-                                    </div>
-                                    <div class="image-gallery__content">
-                                        <span class="font-1 fs-3 text-white">Beautiful Eyes With Brown Hair</span>
-                                        <p class="font-2 text-gray">Nulla laoreet nibh et lectus</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="section bg-secondary-dark">
-            <div class="r-container">
-                <div class="d-flex flex-lg-row flex-column-reverse w-100 m-0">
-                    <div class="col border-left-style pe-lg-4">
-                        <div class="p-3">
-                            <img src="image/dummy-img-600x800.jpg" alt="" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="col p-3 mb-4">
-                        <div class="d-flex flex-column justify-content-center h-100">
-                            <div class="divider mb-3" style="width: 280px;">
-                                <h6 class="text-white font-2 divider-element">ABOUT MY SKILLS</h6>
-                            </div>
-                            <div class="pb-4">
-                                <h2 class="font-1 fw-semibold text-white lh-1 ">I Have Experience in This Field</h2>
-                            </div>
-                            <p class="text-gray font-2 py-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales at nunc
-                                quis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                inceptos himenaeos. Fusce
-                                <br><br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales at nunc
-                                quis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-                            </p>
-                            <div class="d-flex flex-column gap-4">
-                                <div class="r-progress w-75" style="--value:90;">
-                                    <span class="text-white font-2">Photography</span>
-                                    <div class="progress-container mt-2">
-                                        <div class="r-progress-bar percentage-label">
-                                            <div class="progress-value"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="r-progress w-75" style="--value:75;">
-                                    <span class="text-white font-2">Design Thinking</span>
-                                    <div class="progress-container mt-2">
-                                        <div class="r-progress-bar percentage-label">
-                                            <div class="progress-value"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="r-progress w-75" style="--value:80;">
-                                    <span class="text-white font-2">Videography</span>
-                                    <div class="progress-container mt-2">
-                                        <div class="r-progress-bar percentage-label">
-                                            <div class="progress-value"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="r-progress w-75" style="--value:85;">
-                                    <span class="text-white font-2">Social Innovation</span>
-                                    <div class="progress-container mt-2">
-                                        <div class="r-progress-bar percentage-label">
-                                            <div class="progress-value"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section class="section position-relative" style="background-image: url(image/dummy-img-1920x900.jpg);">
+
+
+        <section class="section position-relative" style="background-image: url(image/1920x900port.png);">
             <div class="r-container">
                 <div class="image-overlay"></div>
-                <div class="d-flex h-100 justify-content-center flex-lg-row flex-column position-relative"
-                    style="z-index: 2;">
-                    <div class="d-flex justify-content-start justify-content-lg-end w-100 px-4">
-                        <img src="image/Q1.png" alt="" class="img-fluid" style="width: 120px; height: 100px;">
+                <div class="row row-cols-1 row-cols-lg-2 position-relative" style="z-index: 2;">
+                    <div class="col px-4">
+                        <div class="d-flex flex-column h-100 justify-content-center">
+                            <div class="divider mb-3" style="width: 280px;">
+                                <h6 class="text-white font-2 divider-element">Témoignages récents</h6>
+                            </div>
+                            <div class="pb-4">
+                                <h2 class="font-1 fw-semibold text-white lh-1 ">Les éloges de nos clients</h2>
+                            </div>
+                            <p class="text-gray font-2 py-3">
+                                Découvrez ce que nos clients satisfaits ont à dire dans notre section Témoignages. Des
+                                expériences partagées, des moments inoubliables, et une satisfaction qui parle
+                                d'elle-même. Plongez dans les récits de ceux qui ont choisi Bennani Évents pour faire de
+                                leurs événements des souvenirs exceptionnels.
+                            </p>
+                            <div>
+                                <a type="button" href="services.html" class="font-2">NOS SERVICES</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="overflow-hidden">
-                        <div class="swiper">
-                            <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">
-                                    <div class="d-flex flex-column p-4">
-                                        <p class="text-white mb-4 bg-dark-transparent p-4 fs-5 fst-italic font-2">
-                                            Curabitur faucibus dolor sit amet, consectetur adipiscing elit.
-                                            Aliquam maximus massa quis condimentum dictum. Proin at ornare mi,
-                                            ac consectetur nulla. Curabitur faucibus leo massa, nec viverra
-                                            neque varius.</p>
-                                        <div class="d-flex flex-row mt-3 align-items-center">
-                                            <div class="me-4">
-                                                <img src="image/dummy-img-400x400.jpg" alt=""
-                                                    class="rounded-circle img-fluid"
-                                                    style="width: 4.5rem; height: 4.5rem;">
-                                            </div>
-                                            <div class="d-flex flex-column flex-grow-1">
-                                                <h6 class="accent-color font-2 lh-1">Abraham Smith</h6>
-                                                <span class="text-gray">CEO</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="d-flex flex-column p-4">
-                                        <p class="text-white mb-4 bg-dark-transparent p-4 fs-5 fst-italic font-2">
-                                            Curabitur faucibus dolor sit amet, consectetur adipiscing elit.
-                                            Aliquam maximus massa quis condimentum dictum. Proin at ornare mi,
-                                            ac consectetur nulla. Curabitur faucibus leo massa, nec viverra
-                                            neque varius.</p>
-                                        <div class="d-flex flex-row mt-3 align-items-center">
-                                            <div class="me-4">
-                                                <img src="image/dummy-img-400x400.jpg" alt=""
-                                                    class="rounded-circle img-fluid"
-                                                    style="width: 4.5rem; height: 4.5rem;">
-                                            </div>
-                                            <div class="d-flex flex-column flex-grow-1">
-                                                <h6 class="accent-color font-2 lh-1">Laluna Adam</h6>
-                                                <span class="text-gray">CEO</span>
+                    <div class="col">
+                        <div class="d-flex flex-column h-100 justify-content-center">
+                            <div class="d-flex justify-content-end w-100">
+                                <img src="image/Q1.png" alt="" class="img-fluid" style="max-width: 100px;">
+                            </div>
+                            <div class="overflow-hidden w-100">
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="d-flex flex-column p-4">
+                                                <p class="text-gray mb-4 bg-dark-transparent p-4">
+                                                    La collaboration a été fluide, et leur professionnalisme
+                                                    a grandement contribué à l'esthétique réussie de mes photos.
+                                                    Je recommande vivement Bennani Events à tous les
+                                                    photographes cherchant à sublimer leurs projets grâce
+                                                    à une expertise sonore et lumineuse de premier ordre.</p>
+                                                <div class="d-flex flex-row mt-3 align-items-center">
+                                                    <div class="me-4">
+                                                        <img src="image/400x400AYB.png" alt=""
+                                                            class="rounded-circle img-fluid"
+                                                            style="width: 4.5rem; height: 4.5rem;">
+                                                    </div>
+                                                    <div class="d-flex flex-column flex-grow-1">
+                                                        <h6 class="accent-color font-2 lh-1">Ayoub Ait Ouaali</h6>
+                                                        <span class="text-gray">CEO</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="d-flex flex-column p-4">
-                                        <p class="text-white mb-4 bg-dark-transparent p-4 fs-5 fst-italic font-2">
-                                            Curabitur faucibus dolor sit amet, consectetur adipiscing elit.
-                                            Aliquam maximus massa quis condimentum dictum. Proin at ornare mi,
-                                            ac consectetur nulla. Curabitur faucibus leo massa, nec viverra
-                                            neque varius.</p>
-                                        <div class="d-flex flex-row mt-3 align-items-center">
-                                            <div class="me-4">
-                                                <img src="image/dummy-img-400x400.jpg" alt=""
-                                                    class="rounded-circle img-fluid"
-                                                    style="width: 4.5rem; height: 4.5rem;">
+                                        <div class="swiper-slide">
+                                            <div class="d-flex flex-column p-4">
+                                                <p class="text-gray mb-4 bg-dark-transparent p-4">
+                                                    Grâce à Bennani Events, notre conférence d'entreprise a
+                                                    été un véritable succès. Leur capacité à allier
+                                                    technologie de pointe et support technique réactif nous a
+                                                    permis de délivrer des présentations impeccables dans une
+                                                    ambiance professionnelle.</p>
+                                                <div class="d-flex flex-row mt-3 align-items-center">
+                                                    <div class="me-4">
+                                                        <img src="image/400x400ABD.png" alt=""
+                                                            class="rounded-circle img-fluid"
+                                                            style="width: 4.5rem; height: 4.5rem;">
+                                                    </div>
+                                                    <div class="d-flex flex-column flex-grow-1">
+                                                        <h6 class="accent-color font-2 lh-1">Abdellah Chakaf</h6>
+                                                        <span class="text-gray">Owner</span>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="d-flex flex-column flex-grow-1">
-                                                <h6 class="accent-color font-2 lh-1">Mike Wasosky</h6>
-                                                <span class="text-gray">CEO</span>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="d-flex flex-column p-4">
+                                                <p class="text-gray mb-4 bg-dark-transparent p-4">
+                                                    Pour notre gala de charité, Bennani Events a
+                                                    su créer une atmosphère magique, une décoration
+                                                    somptueuse alliée à un éclairage parfaitement orchestré,
+                                                    qui a laissé nos convives émerveillés. Leur attention aux
+                                                    détails a vraiment fait la différence.</p>
+                                                <div class="d-flex flex-row mt-3 align-items-center">
+                                                    <div class="me-4">
+                                                        <img src="image/400x400AMN.png" alt=""
+                                                            class="rounded-circle img-fluid"
+                                                            style="width: 4.5rem; height: 4.5rem;">
+                                                    </div>
+                                                    <div class="d-flex flex-column flex-grow-1">
+                                                        <h6 class="accent-color font-2 lh-1">Ayman Bouaricha</h6>
+                                                        <span class="text-gray">Team Leader</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -471,93 +646,156 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="section">
+            <div class="r-container">
+                <div class="divider mb-3 center-text">
+                    <h4 class="text-white font-2 deeev">Rendez-nous visite</h4><br><br><br>
+                </div>
+                <div class="mb-3">
+                    <iframe loading="lazy" class="maps" <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12981.583774114924!2d-5.3751904!3d35.5686179!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b43ff4ea80d93%3A0x2043d81f731047b1!2sBENNANI%20EVENTS!5e0!3m2!1sen!2sma!4v1705888841328!5m2!1sen!2sma"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
         </section>
 
         <section class="section">
             <div class="r-container">
-                <div class="row row-cols-1 row-cols-lg-2">
-                    <div class="col col-lg-5 pe-lg-5">
-                        <div class="d-flex flex-column justify-content-center h-100">
-                            <div class="divider mb-3" style="width: 280px;">
-                                <h6 class="text-white font-2 divider-element">PRICING PLAN</h6>
-                            </div>
-                            <div class="pb-4">
-                                <h2 class="font-1 fw-semibold text-white lh-1 ">These Are The Offers For You</h2>
-                            </div>
-                            <p class="text-gray font-2 py-3">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales at nunc
-                                quis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                                inceptos himenaeos. Fusce
-                                <br><br>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sodales at nunc
-                                quis semper. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
-                            </p>
-                            <div>
-                                <a type="button" href="#" class="font-2">VIEW OUR PRICE</a>
+                <div class="d-flex flex-column-reverse flex-lg-row w-100">
+                    <div class="col">
+                        <div class="position-relative mb-3">
+                            <img src="image/cont2.png" alt="" class="img-fluid">
+                            <div class="overlay">
+                                <h3 class="font-1" sty>PRENEZ CONTACT</h3>
                             </div>
                         </div>
-                    </div>
-                    <div class="col col-lg-7">
-                        <div class="row row-cols-1 row-cols-lg-2">
-                            <div class="col">
-                                <div class="card bg-secondary-dark rounded-0 text-center p-5 d-flex flex-column align-items-center">
-                                    <h5 class="text-white font-1">BASIC</h5>
-                                    <div class="d-flex my-2">
-                                        <span class="accent-color font-1 fs-1 fw-semibold">$</span>
-                                        <h1 class="accent-color font-1 lh-1">39</h1>
-                                        <div class="d-flex flex-column text-start mt-3 mx-1">
-                                            <span class="accent-color font-1 lh-1 fs-3">99</span>
-                                            <span class="text-gray font-2">Hours</span>
-                                        </div>
-
+                        <div class="text-start">
+                            <div class="success_msg toast align-items-center w-100 shadow-none mb-3 bg-transparent border border-success rounded-0 my-4"
+                                role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="d-flex p-2">
+                                    <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-success">
+                                        <i class="fa-solid fa-check f-36 text-success"></i>
+                                        Votre message a été envoyé avec succès.
                                     </div>
-                                    <ul class="list-group list-group-flush border-0 my-2 w-100">
-                                        <li class="list-group-item border-secondary border-opacity-25 py-4 px-0"><i
-                                                class="fa-regular fa-circle-check accent-color me-2"></i> Duis sit amet
-                                            vehicula mi</li>
-                                        <li class="list-group-item border-secondary border-opacity-25 py-4 px-0"><i
-                                                class="fa-regular fa-circle-check accent-color me-2"></i> Donec eget
-                                            lorem nec mauris</li>
-                                        <li class="list-group-item border-secondary border-opacity-25 py-4 px-0"><i
-                                                class="fa-regular fa-circle-check accent-color me-2"></i> Sed non sapien
-                                            non</li>
-                                        <li class="list-group-item border-secondary border-opacity-25 py-4 px-0"><i
-                                                class="fa-regular fa-circle-check accent-color me-2"></i> Vestibulum
-                                            consequat mauris erat</li>
-                                    </ul>
-                                    <div class="mt-3">
-                                        <a type="button" href="#" class="font-2">CLICK HERE</a>
-                                    </div>
+                                    <button type="button"
+                                        class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
+                                        data-bs-dismiss="toast" aria-label="Close"><i
+                                            class="fa-solid fa-xmark"></i></button>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card bg-secondary-dark rounded-0 text-center p-5 d-flex flex-column align-items-center">
-                                    <h5 class="text-white font-1">STANDARD</h5>
-                                    <div class="d-flex my-2">
-                                        <span class="accent-color font-1 fs-1 fw-semibold">$</span>
-                                        <h1 class="accent-color font-1 lh-1">39</h1>
-                                        <div class="d-flex flex-column text-start mt-3 mx-1">
-                                            <span class="accent-color font-1 lh-1 fs-3">99</span>
-                                            <span class="text-gray font-2">Hours</span>
-                                        </div>
-
+                            <div class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 bg-transparent my-4 border rounded-0"
+                                role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="d-flex p-2">
+                                    <div class="toast-body f-18 d-flex flex-row gap-3 align-items-center text-danger">
+                                        <i class="fa-solid fa-triangle-exclamation f-36 text-danger"></i>
+                                        Erreur ! L'envoi du formulaire a échoué.
                                     </div>
-                                    <ul class="list-group list-group-flush border-0 my-2 w-100">
-                                        <li class="list-group-item border-secondary border-opacity-25 py-4 px-0"><i
-                                                class="fa-regular fa-circle-check accent-color me-2"></i> Duis sit amet
-                                            vehicula mi</li>
-                                        <li class="list-group-item border-secondary border-opacity-25 py-4 px-0"><i
-                                                class="fa-regular fa-circle-check accent-color me-2"></i> Donec eget
-                                            lorem nec mauris</li>
-                                        <li class="list-group-item border-secondary border-opacity-25 py-4 px-0"><i
-                                                class="fa-regular fa-circle-check accent-color me-2"></i> Sed non sapien
-                                            non</li>
-                                        <li class="list-group-item border-secondary border-opacity-25 py-4 px-0"><i
-                                                class="fa-regular fa-circle-check accent-color me-2"></i> Vestibulum
-                                            consequat mauris erat</li>
-                                    </ul>
-                                    <div class="mt-3">
-                                        <a type="button" href="#" class="font-2">CLICK HERE</a>
+                                    <button type="button"
+                                        class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
+                                        data-bs-dismiss="toast" aria-label="Close"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                </div>
+                            </div>
+                            <form action="" class="d-flex flex-column w-100 needs-validation mb-3 form" novalidate>
+                                <div class="row">
+                                    <div class="col mb-3">
+                                        <input type="text" class="form-control p-3" name="name" id="name"
+                                            placeholder="Nom" required>
+                                        <div class="invalid-feedback">
+                                            Le champ est obligatoire.
+                                        </div>
+                                    </div>
+                                    <div class="col mb-3">
+                                        <input type="email" class="form-control p-3" id="email" name="email"
+                                            placeholder="Email" required>
+                                        <div class="invalid-feedback">
+                                            L'adresse email que vous avez saisie n'est pas valide. Veuillez vous assurer
+                                            qu'elle suit le format : nomutilisateur@example.com.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                
+                                    <div class="col mb-3">
+                                        <input type="tel" class="form-control p-3" id="phone" pattern="0[0-9]{9}" name="phone"
+                                            placeholder="Numéro de Tel" required>
+                                        <div class="invalid-feedback">
+                                            le numero que vous avez saisie n'est pas valide. Veuillez vous assurer
+                                            qu'elle suit le format : 06xxxxxxxx ou 07xxxxxxxx.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" id="message" name="message" rows="5"
+                                        placeholder="Message"></textarea>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-center">
+                                    <button type="submit" class="submit_form bg-transparent font-2 w-100 py-3">
+                                        Envoyer
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col px-lg-5 mb-4">
+                        <div class="d-flex flex-column h-100 justify-content-center">
+                            <div class="divider mb-3" style="width: 280px;">
+                                <h6 class="text-white font-2 divider-element">CONTACTEZ NOUS</h6>
+                            </div>
+                            <div class="pb-4">
+                                <h2 class="font-1 fw-semibold text-white lh-1 ">Donner vie à vos projets événementiels.
+                                </h2>
+                            </div>
+                            <p class="text-gray font-2 py-3">
+                                Nous attendons avec impatience de discuter de vos besoins et de contribuer à faire de
+                                votre événement un succès mémorable. Laissez-nous être le partenaire de vos moments
+                                spéciaux.
+                            </p>
+                            <div class="row row-cols-1 row-cols-lg-2">
+                                <div class="col mb-3">
+                                    <div class="d-flex flex-row align-items-center gap-3">
+                                        <img src="image/icon5.png" alt="" class="img-fluid" style="max-width: 50px;">
+                                        <div class="d-flex flex-column">
+                                            <span class="font-2 text-white fw-light fs-5"
+                                                style="letter-spacing: 2px;">Téléphone</span>
+                                            <span class="font-2 text-white fw-light text-gray">06 48 92 55 70</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="d-flex flex-row align-items-center gap-3">
+                                        <img src="image/icon7.png" alt="" class="img-fluid" style="max-width: 50px;">
+                                        <div class="d-flex flex-column">
+                                            <span class="font-2 text-white fw-light fs-5"
+                                                style="letter-spacing: 2px;">Email</span>
+                                            <span
+                                                class="font-2 text-white fw-light text-gray">contact@bennanievents.ma</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="d-flex flex-row align-items-center gap-3">
+                                        <img src="image/icon6.png" alt="" class="img-fluid" style="max-width: 50px;">
+                                        <div class="d-flex flex-column">
+                                            <span class="font-2 text-white fw-light fs-5"
+                                                style="letter-spacing: 2px;">Website</span>
+                                            <span
+                                                class="font-2 text-white fw-light text-gray">www.bennanievents.ma</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col mb-3">
+                                    <div class="d-flex flex-row align-items-center gap-3">
+                                        <img src="image/icon8.png" alt="" class="img-fluid" style="max-width: 50px;">
+                                        <div class="d-flex flex-column">
+                                            <span class="font-2 text-white fw-light fs-5"
+                                                style="letter-spacing: 2px;">Address</span>
+                                            <span class="font-2 text-white fw-light text-gray">50 Av. Hassan II,
+                                                Tétouan</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -566,7 +804,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- Footer -->
@@ -580,39 +817,42 @@
                             <div style="max-width: 150px;">
                                 <img src="image/logo.png" alt="" class="img-fluid">
                             </div>
-                            <span class="text-gray font-2">In euismod dolor non justo vestibulum laoreet.</span>
+                            <span class="text-gray font-2">Créativité, Qualité, Événements, Innovation, Expertise.
+
+                            </span>
                         </div>
                     </div>
                     <div class="col">
                         <div
                             class="d-flex flex-column justify-content-center align-items-lg-end align-items-center h-100 gap-4">
                             <div class="d-flex flex-row gap-3 flex-wrap justify-content-center justify-content-lg-end">
-                                <a href="" class="text-gray font-2">Home</a>
-                                <a href="" class="text-gray font-2">About</a>
-                                <a href="" class="text-gray font-2">Portfolio</a>
-                                <a href="" class="text-gray font-2">Services</a>
-                                <a href="" class="text-gray font-2">Blog</a>
-                                <a href="" class="text-gray font-2">Contact Us</a>
+                                <a href="index.html" class="text-gray font-2">Accueil </a>
+                                <a href="about.html" class="text-gray font-2">À propos </a>
+
+                                <a href="services.html" class="text-gray font-2">Nos Services</a>
+                                <a href="portfolio_grid.html" class="text-gray font-2">Nos réalisations</a>
+                                <a href="blog_post.html" class="text-gray font-2">Blog</a>
+                                <a href="contact.html" class="text-gray font-2">Nous contacter </a>
                             </div>
                             <div class="social mb-3">
                                 <div class="social-item">
-                                    <a href="www.example.com">
+                                    <a href="https://fb.com/BENNANIEvents">
                                         <i class="fa-brands fa-facebook"></i>
                                     </a>
                                 </div>
                                 <div class="social-item">
-                                    <a href="#">
-                                        <i class="fa-brands fa-twitter"></i>
+                                    <a href="https://www.instagram.com/bennani.events/">
+                                        <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 </div>
                                 <div class="social-item">
-                                    <a href="#">
-                                        <i class="fa-brands fa-behance"></i>
+                                    <a href="https://www.linkedin.com/in/mehdi-bennani-9951802a9/?originalSubdomain=ma">
+                                        <i class="fa-brands fa-linkedin"></i>
                                     </a>
                                 </div>
                                 <div class="social-item">
-                                    <a href="#">
-                                        <i class="fa-brands fa-dribbble"></i>
+                                    <a href="https://www.youtube.com/@bennanievents388">
+                                        <i class="fa-brands fa-youtube"></i>
                                     </a>
                                 </div>
                             </div>
@@ -624,11 +864,15 @@
         <section>
             <div class="r-container py-4 px-4">
                 <div class="text-center">
-                    <span class="text-gray">Copyright 2022 © All Right Reserved Design by Rometheme</span>
+                    <span class="text-gray">Copyright 2024 © All Right Reserved Design by House Of Events</span>
                 </div>
             </div>
         </section>
     </footer>
+    <script src="header.js"></script>
+    <!-- Swiper's JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

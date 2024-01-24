@@ -897,3 +897,70 @@ input.form-check-input {
 .background-image.active {
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Container styling */
+.buttons-container {
+  display: flex;        /* Use flexbox to align items */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;  /* Center items vertically */
+  gap: 20px;            /* Add space between buttons */
+}
+
+/* Button styling */
+.download-button {
+  padding: 1em 2em;    /* Add padding inside the buttons */
+  background-color: var(--accent-color); /* Use the accent color for the button background */
+  color: white;        /* Text color */
+  text-decoration: none; /* Remove underline from links */
+  font-family: var(--font-2); /* Use the Quicksand font */
+  font-size: 1rem;     /* Set font size */
+  border: none;        /* Remove border */
+  cursor: pointer;     /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+/* Button hover effect */
+.download-button:hover {
+  background-color: darken(var(--accent-color), 10%); /* Darken the button background on hover */
+}
+
+/* Media query for responsive layout */
+@media (max-width: 768px) {
+  .buttons-container {
+      flex-direction: row; /* Ensure buttons are inline on smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

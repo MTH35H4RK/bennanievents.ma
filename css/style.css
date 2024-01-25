@@ -910,6 +910,13 @@ input.form-check-input {
 
 
 
+.image-gallery__content {
+  text-align: center; /* This centers the text horizontally */
+  display: flex; /* Enables Flexbox layout */
+  flex-direction: column; /* Stacks items vertically */
+  justify-content: center; /* Centers items along the vertical axis */
+  height: 100%; /* Ensure the div takes full height of its parent */
+}
 
 
 

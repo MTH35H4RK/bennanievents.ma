@@ -201,8 +201,12 @@ a {
 }
 
 .section {
-    padding: 6em 2em 6em 2em;
+    padding: 6em 2em 4em 2em;
     overflow: hidden;
+}
+.sectionAYMAN {
+  padding: 6em 2em 0em 2em;
+  overflow: hidden;
 }
 .headerz{
     background: #323232;
@@ -242,7 +246,10 @@ a {
 .text-gray {
     color: var(--gray-color) !important;
 }
-
+.text-ayman {
+  color: #ffffff !important;
+  
+}
 .image-overlay {
     height: 100%;
     width: 100%;
@@ -872,7 +879,11 @@ input.form-check-input {
 
 
 
-
+  .iframe-container {
+    background-color: #cdad4d; /* Your specified color */
+    padding: 20px; /* Optional: Adjusts the space around the iframe */
+    /* Additional styling as needed */
+  }
 
 
 
@@ -954,20 +965,21 @@ input.form-check-input {
 /* Media query for responsive layout */
 @media (max-width: 768px) {
   .buttons-container {
-      flex-direction: row; /* Ensure buttons are inline on smaller screens */
+      flex-direction: row; 
   }
 }
 
 
+.mobile-version {
+  display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 768px) {
+  
+  .desktop-version {
+      display: none;
+  }
+  .mobile-version {
+      display: block;
+  }
+}

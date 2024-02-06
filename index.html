@@ -32,7 +32,7 @@
     <iframe id="myIframe" src="header/index.html" scrolling="no"></iframe>
 
     <section class="bg-dark-color sticky-top">
-    
+
         <div class="headerz" id="r-container">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
@@ -58,7 +58,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="portfolio_grid.html">Nos réalisations</a>
                             </li>
-                           
+
                             <li class="nav-item">
                                 <a href="contact.html" class="nav-link">Nous contacter</a>
                             </li>
@@ -76,7 +76,7 @@
     <main id="oldstyles">
         <section class="position-relative section" style="background-image: url(image/bg.png);">
             <div class="r-container">
-                <div class="image-overlay-bg" style="background-image: url(image/imageind.png);"></div>
+                <div class="image-overlay-bg" style="background-image: url(image/inded.webp);"></div>
                 <div class="row row-cols-1 row-cols-lg-2 position-relative" style="z-index: 2;">
                     <div class="col col-lg-8">
                         <div class="divider mb-3">
@@ -88,7 +88,8 @@
                         <div class="border-left-style border-accent-color px-4 mt-5">
                             <div class="d-flex flex-column">
 
-                                <p class="text-gray font-2 py-3">
+                                <!-- Full version for desktop -->
+                                <p class="text-ayman font-2 py-3 desktop-version">
                                     Bennani Events, l'expertise exceptionnelle dans la sonorisation et l'éclairage,
                                     transcendant les normes pour insuffler une vie singulière à vos moments. Des
                                     ambiances captivantes et des jeux de lumière exceptionnels créent des événements
@@ -96,6 +97,14 @@
                                     atmosphères parfaites. Faites confiance à Bennani Events pour élever vos événements
                                     où le son rencontre la lumière, donnant vie à des souvenirs vibrants.
                                 </p>
+
+                                <!-- Short version for mobile -->
+                                <p class="text-ayman font-2 py-3 mobile-version">
+                                    Bennani Events, spécialiste en sonorisation et éclairage, crée des événements
+                                    uniques et mémorables. Notre équipe transforme chaque moment en une expérience
+                                    exceptionnelle.
+                                </p>
+
                                 <div>
                                     <a type="button" href="services.html" class="font-2">Découvrir plus nos
                                         prestations</a>
@@ -128,28 +137,6 @@
                                 bien plus qu'une entreprise événementielle, c'est une histoire d'engagement envers
                                 l'excellence et la création de moments mémorables pour nos clients..
                             </p>
-                            <div class="d-flex flex-column py-2 gap-3  mt-3">
-                                <span class="accent-color font-2" style="letter-spacing: 2px;">EVENEMENT REALISE:
-                                </span>
-                                <div class="d-flex flex-column gap-3">
-                                    <div class="d-flex flex-row gap-3 font-2 align-items-center">
-                                        <i class="fa-solid fa-angles-right accent-color"></i>
-                                        <span class="text-gray">Festival d'été de Chmaala </span>
-                                    </div>
-                                    <div class="d-flex flex-row gap-3 font-2 align-items-center">
-                                        <i class="fa-solid fa-angles-right accent-color"></i>
-                                        <span class="text-gray">Nostalgia Tetouan</span>
-                                    </div>
-                                    <div class="d-flex flex-row gap-3 font-2 align-items-center">
-                                        <i class="fa-solid fa-angles-right accent-color"></i>
-                                        <span class="text-gray">Festival Chefchaouen du Film</span>
-                                    </div>
-                                    <div class="d-flex flex-row gap-3 font-2 align-items-center">
-                                        <i class="fa-solid fa-angles-right accent-color"></i>
-                                        <span class="text-gray">Congrès Médical des gynécologues a Tétouan</span>
-                                    </div>
-                                </div>
-                            </div>
                             <BR><BR>
                             <div>
                                 <a type="button" href="about.html" class="font-2">À PROPOS DE NOUS</a>
@@ -168,7 +155,9 @@
             </div>
         </section>
         <!-- fin qui somme nous-->
+        <div class="iframe-container">
         <iframe id="myIframe2" src="header/chifres.html" scrolling="no"></iframe>
+    </div>
         <section class="section bg-secondary-dark">
             <div class="r-container">
                 <div class="d-flex flex-lg-row flex-column-reverse w-100">
@@ -198,16 +187,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col mb-4">
-                                <div class="d-flex flex-column">
-                                    <div class="mb-4">
-                                        <img src="image/loc.png" alt="" class="img-fluid icon-box">
-                                    </div>
-                                    <h5 class="text-white font-1 fs-3">Location de Matériel haut de gamme </h5>
-                                    <p class="text-gray font-2">Équipements variés pour sublimer vos événements.
-                                    </p>
-                                </div>
-                            </div>
+                           
 
                             <div class="col mb-4">
                                 <div class="d-flex flex-column">
@@ -220,7 +200,16 @@
                                     </p>
                                 </div>
                             </div>
-
+                            <div class="col mb-4">
+                                <div class="d-flex flex-column">
+                                    <div class="mb-4">
+                                        <img src="image/loc.png" alt="" class="img-fluid icon-box">
+                                    </div>
+                                    <h5 class="text-white font-1 fs-3">Décoration</h5>
+                                    <p class="text-gray font-2">Équipements variés pour sublimer vos événements.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col mb-4 ps-2">
@@ -271,7 +260,7 @@
                                 savoir-faire pour assurer des expériences exceptionnelles à chaque événement.
                             </p>
                             <div class="d-flex flex-column gap-4">
-                                <div class="r-progress w-75" style="--value:80;">
+                                <div class="r-progress w-75" style="--value:100;">
                                     <span class="text-white font-2">Technicité Sonore</span>
                                     <div class="progress-container mt-2">
                                         <div class="r-progress-bar percentage-label">
@@ -279,24 +268,16 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="r-progress w-75" style="--value:85;">
-                                    <span class="text-white font-2">Éclairage Innovant  </span>
+                                <div class="r-progress w-75" style="--value:100;">
+                                    <span class="text-white font-2">Éclairage Innovant </span>
                                     <div class="progress-container mt-2">
                                         <div class="r-progress-bar percentage-label">
                                             <div class="progress-value"></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="r-progress w-75" style="--value:75;">
-                                    <span class="text-white font-2">Gestion Logistique  </span>
-                                    <div class="progress-container mt-2">
-                                        <div class="r-progress-bar percentage-label">
-                                            <div class="progress-value"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="r-progress w-75" style="--value:90;">
-                                    <span class="text-white font-2">Technologie Audiovisuelle 
+                                <div class="r-progress w-75" style="--value:100;">
+                                    <span class="text-white font-2">Technologie Audiovisuelle
                                     </span>
                                     <div class="progress-container mt-2">
                                         <div class="r-progress-bar percentage-label">
@@ -304,6 +285,15 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="r-progress w-75" style="--value:100;">
+                                    <span class="text-white font-2">Gestion Logistique </span>
+                                    <div class="progress-container mt-2">
+                                        <div class="r-progress-bar percentage-label">
+                                            <div class="progress-value"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -370,10 +360,10 @@
                 </div>
             </div>
         </section>
-         
+
         <!--fin nos realisation-->
 
-         
+
         <section>
             <div class="row row-cols-1 row-cols-lg-2 w-100 m-0">
                 <div class="col p-0">
@@ -465,15 +455,15 @@
                 </div>
             </div>
         </section>
-<!-- fin mot de directeur-->
+        <!-- fin mot de directeur-->
 
 
 
-      
 
-        
-       
-       
+
+
+
+
         <section class="py-5 position-relative">
             <div class="r-container">
                 <div class="divider mb-3 center-text">
@@ -516,73 +506,73 @@
 
     </main>
 
-   <!-- Footer -->
-   <footer>
-    <section class="px-4">
-        <div class="r-container pt-5 pb-4 border-bottom border-secondary border-1 border-opacity-25 ">
-            <div class="row row-cols-1 row-cols-lg-2 w-100">
-                <div class="col mb-4">
-                    <div
-                        class="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start gap-4">
-                        <div style="max-width: 150px;">
-                            <img src="image/logo.png" alt="" class="img-fluid">
-                        </div>
-                        <span class="text-gray font-2">Créativité, Qualité, Événements, Innovation, Expertise.
+    <!-- Footer -->
+    <footer>
+        <section class="px-4">
+            <div class="r-container pt-5 pb-4 border-bottom border-secondary border-1 border-opacity-25 ">
+                <div class="row row-cols-1 row-cols-lg-2 w-100">
+                    <div class="col mb-4">
+                        <div
+                            class="d-flex flex-column align-items-center align-items-lg-start text-center text-lg-start gap-4">
+                            <div style="max-width: 150px;">
+                                <img src="image/logo.png" alt="" class="img-fluid">
+                            </div>
+                            <span class="text-gray font-2">Créativité, Qualité, Événements, Innovation, Expertise.
 
-                        </span>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column justify-content-center align-items-lg-end align-items-center h-100 gap-4">
-                        <div class="d-flex flex-row gap-3 flex-wrap justify-content-center justify-content-lg-end">
-                            <a href="index.html" class="text-gray font-2">Accueil </a>
-                            <a href="about.html" class="text-gray font-2">À propos </a>
-                            
-                            <a href="services.html" class="text-gray font-2">Nos Services</a>
-                            <a href="portfolio_grid.html" class="text-gray font-2">Nos réalisations</a>
-                            <a href="blog_post.html" class="text-gray font-2">Blog</a>
-                            <a href="contact.html" class="text-gray font-2">Nous contacter </a>
+                            </span>
                         </div>
-                        <div class="social mb-3">
-                            <div class="social-item">
-                                <a href="https://fb.com/BENNANIEvents">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
+                    </div>
+                    <div class="col">
+                        <div
+                            class="d-flex flex-column justify-content-center align-items-lg-end align-items-center h-100 gap-4">
+                            <div class="d-flex flex-row gap-3 flex-wrap justify-content-center justify-content-lg-end">
+                                <a href="index.html" class="text-gray font-2">Accueil </a>
+                                <a href="about.html" class="text-gray font-2">À propos </a>
+
+                                <a href="services.html" class="text-gray font-2">Nos Services</a>
+                                <a href="portfolio_grid.html" class="text-gray font-2">Nos réalisations</a>
+                                <a href="blog_post.html" class="text-gray font-2">Blog</a>
+                                <a href="contact.html" class="text-gray font-2">Nous contacter </a>
                             </div>
-                            <div class="social-item">
-                                <a href="https://www.instagram.com/bennani.events/">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </div>
-                            <div class="social-item">
-                                <a
-                                    href="https://www.linkedin.com/in/mehdi-bennani-9951802a9/?originalSubdomain=ma">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                </a>
-                            </div>
-                            <div class="social-item">
-                                <a href="https://www.youtube.com/@bennanievents388">
-                                    <i class="fa-brands fa-youtube"></i>
-                                </a>
+                            <div class="social mb-3">
+                                <div class="social-item">
+                                    <a href="https://fb.com/BENNANIEvents">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://www.instagram.com/bennani.events/">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://www.linkedin.com/in/mehdi-bennani-9951802a9/?originalSubdomain=ma">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div class="social-item">
+                                    <a href="https://www.youtube.com/@bennanievents388">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section>
-        <div class="r-container py-4 px-4">
-            <div class="text-center">
-                <span class="text-gray">Copyright 2024 © All Right Reserved Design by House Of Events</span>
+        </section>
+        <section>
+            <div class="r-container py-4 px-4">
+                <div class="text-center">
+                    <span class="text-gray">Copyright 2024 © All Right Reserved Design by House Of Events</span>
+                </div>
             </div>
-        </div>
-    </section>
-</footer>
+        </section>
+    </footer>
 
     <script src="js/vendor/fslightbox.js"></script>
     <script src="header.js"></script>
- <!--  ALl JS Plugins
+    <!--  ALl JS Plugins
     ====================================== -->
     <script src="js/jquery.min.js"></script>
     <script src="js/modernizr.min.js"></script>

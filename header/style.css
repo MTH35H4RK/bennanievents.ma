@@ -264,8 +264,8 @@ body {
   font-size: 17px;
   font-weight: 400;
   line-height: 32px;
-  color: #696969;
-  background-color: #343434;
+  color: #cdad4d;
+  background-color: #cdad4d;
 }
 
 h1,
@@ -7875,7 +7875,7 @@ header.header-5 .main-header-wraper .header-search.show .search-box .form-group:
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #343434;
+  background-color: #cdad4d;
   content: "";
 }
 @media (min-width: 1500px) {

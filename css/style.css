@@ -435,10 +435,13 @@ a {
 .reference-img {
   width: 100%;
   height: auto;
-  max-width: 150px; /* Set a maximum width for the images */
-  margin: 10px auto; /* Center the images with some spacing */
+  max-width: 100px; /* Set a maximum width for the images */
+  margin: 10px; /* Add some spacing between images */
 }
-
+.slick-slider {
+  width: 80%; /* Adjust the width of the slider container */
+  margin: 0 auto; /* Center the slider */
+}
 .row {
     height: 100%;
   }

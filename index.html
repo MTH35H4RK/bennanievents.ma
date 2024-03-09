@@ -90,12 +90,13 @@
 
                                 <!-- Full version for desktop -->
                                 <p class="text-ayman font-2 py-3 desktop-version">
-                                    Bennani Events, l'expertise exceptionnelle dans la sonorisation et l'éclairage,
-                                    transcendant les normes pour insuffler une vie singulière à vos moments. Des
-                                    ambiances captivantes et des jeux de lumière exceptionnels créent des événements
-                                    mémorables. Notre équipe dévouée capture l'essence de chaque moment, sculptant des
-                                    atmosphères parfaites. Faites confiance à Bennani Events pour élever vos événements
-                                    où le son rencontre la lumière, donnant vie à des souvenirs vibrants.
+                                    <b>Qui sommes-nous ?</b><br><br>
+                                    Bennani Events, société d‘événementiel experte en audiovisuel et leader au nord du
+                                    Maroc, intervenant à l’échelle nationale. Doté du plus grand parc matériel en
+                                    sonorisation, éclairage, écran LED et installation scénique, pour offrir des
+                                    services d’exceptions à des événements exceptionnels.
+                                    <br>
+                                    <i>« FONDÉE PAR BENNANI MEHDI »</i>
                                 </p>
 
                                 <!-- Short version for mobile -->
@@ -115,7 +116,24 @@
                 </div>
             </div>
         </section>
-        <section class="section">
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var images = ["image/inded.webp", "image/indexp.jpg"];
+                var currentIndex = 0;
+                var imageOverlay = document.querySelector('.image-overlay-bg');
+
+                function changeImage() {
+                    imageOverlay.style.backgroundImage = 'url(' + images[currentIndex] + ')';
+                    currentIndex = (currentIndex + 1) % images.length;
+                }
+
+                // Change image every 5 seconds (5000 milliseconds)
+                setInterval(changeImage, 5000);
+            });
+        </script>
+
+        <section class="sectionAYMANZ">
             <div class="r-container">
                 <div class="row row-cols-1 row-cols-lg-2 w-100">
                     <div class="col mb-4">
@@ -155,59 +173,100 @@
             </div>
         </section>
         <!-- fin qui somme nous-->
-        <div class="iframe-container">
-        <iframe id="myIframe2" src="header/chifres.html" scrolling="no"></iframe>
-    </div>
+
         <section class="section bg-secondary-dark">
             <div class="r-container">
                 <div class="d-flex flex-lg-row flex-column-reverse w-100">
                     <div class="col p-3">
                         <div class="row row-cols-1 row-cols-lg-2 w-100">
-                            <div class="col mb-4">
-                                <div class="d-flex flex-column">
-                                    <div class="mb-4">
+                            <div class="col mb-3">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="m-3">
                                         <img src="image/SONO.png" alt="" class="img-fluid icon-box">
                                     </div>
-                                    <h5 class="text-white font-1 fs-3">Sonorisation d'exception</h5>
-                                    <p class="text-gray font-2">
-                                        Qualité sonore immersive pour tous vos événements.
+                                    <div class="d-flex flex-column">
+                                        <h5 class="text-white font-1 fs-3">Sonorisation d'exception
+                                        </h5>
+                                        <p class="text-gray font-2">
+                                            Notre sonorisation, avec le système haut de gamme « Nexo » garantit une qualité audio supérieure.
 
-                                    </p>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
-                                <div class="d-flex flex-column">
-                                    <div class="mb-4">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="m-3">
+                                        <img src="image/giant.png" alt="" class="img-fluid icon-box">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h5 class="text-white font-1 fs-3">Écran Géant
+                                        </h5>
+                                        <p class="text-gray font-2">
+                                            Notre expertise réinvente les événements avec l’installation des structures de scènes pour impressionner votre public.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-4">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="m-3">
                                         <img src="image/LIGHT.png" alt="" class="img-fluid icon-box">
                                     </div>
-                                    <h5 class="text-white font-1 fs-3">Éclairage captivant</h5>
-                                    <p class="text-gray font-2">
-                                        Illuminez vos événements avec notre expertise lumineuse.
-
-                                    </p>
+                                    <div class="d-flex flex-column">
+                                        <h5 class="text-white font-1 fs-3">Éclairage captivant
+                                        </h5>
+                                        <p class="text-gray font-2">
+                                            Bennani Events transforme l'éclairage en art, créant des ambiances
+                                            uniques où chaque détail brille d'exception.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                           
-
                             <div class="col mb-4">
-                                <div class="d-flex flex-column">
-                                    <div class="mb-4">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="m-3">
                                         <img src="image/scene.png" alt="" class="img-fluid icon-box">
                                     </div>
-                                    <h5 class="text-white font-1 fs-3">Événements mémorables</h5>
-                                    <p class="text-gray font-2">
-                                        Planification experte pour des moments uniques.
-                                    </p>
+                                    <div class="d-flex flex-column">
+                                        <h5 class="text-white font-1 fs-3">Installation Scénique.
+                                        </h5>
+                                        <p class="text-gray font-2">
+                                            Bennani Events réinvente les espaces avec des installations
+                                            scéniques qui allient technologie, créativité et expertise,
+                                            captivant l'imagination
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col mb-4">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="m-3">
+                                        <img src="image/DECO.png" alt="" class="img-fluid icon-box">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h5 class="text-white font-1 fs-3">Décoration
+                                        </h5>
+                                        <p class="text-gray font-2">
+                                            Chez Bennani Events, Offrez à vos événements une ambiance unique
+                                            avec nos solutions de décoration sur mesure.
+
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col mb-4">
-                                <div class="d-flex flex-column">
-                                    <div class="mb-4">
-                                        <img src="image/loc.png" alt="" class="img-fluid icon-box">
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="m-3">
+                                        <img src="image/orga.png" alt="" class="img-fluid icon-box">
                                     </div>
-                                    <h5 class="text-white font-1 fs-3">Décoration</h5>
-                                    <p class="text-gray font-2">Équipements variés pour sublimer vos événements.
-                                    </p>
+                                    <div class="d-flex flex-column">
+                                        <h5 class="text-white font-1 fs-3">Organisation d'Événements</h5>
+                                        <p class="text-gray font-2">
+                                            Bennani Events excelle dans l'organisation d'événements mémorables, alliant originalité, dynamisme et engagement irréprochable à chaque étape.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -237,19 +296,23 @@
                 </div>
             </div>
         </section>
+
         <!--fin nos presta-->
-        <section class="section bg-secondary-dark">
+        <div class="iframe-container">
+            <iframe id="myIframe2" src="header/chifres.html" scrolling="no"></iframe>
+        </div>
+        <section class="sectionAYMANZZ bg-secondary-dark">
             <div class="r-container">
                 <div class="d-flex flex-lg-row flex-column-reverse w-100 m-0">
                     <div class="col border-left-style pe-lg-4">
                         <div class="p-3">
-                            <img src="image/600x800.png" alt="" class="img-fluid">
+                            <img src="image/compe.jpg" alt="" class="img-fluid">
                         </div>
                     </div>
                     <div class="col p-3 mb-4">
                         <div class="d-flex flex-column justify-content-center h-100">
                             <div class="divider mb-3" style="width: 280px;">
-                                <h6 class="text-white font-2 divider-element">NOS COMPETENCE</h6>
+                                <h6 class="text-white font-2 divider-element">NOS COMPETENCES</h6>
                             </div>
                             <div class="pb-4">
                                 <h2 class="font-1 fw-semibold text-white lh-1 ">La Magie de l'Événementiel</h2>
@@ -286,7 +349,7 @@
                                     </div>
                                 </div>
                                 <div class="r-progress w-75" style="--value:100;">
-                                    <span class="text-white font-2">Gestion Logistique </span>
+                                    <span class="text-white font-2">Organisation Événementielle </span>
                                     <div class="progress-container mt-2">
                                         <div class="r-progress-bar percentage-label">
                                             <div class="progress-value"></div>
@@ -340,8 +403,7 @@
                                 <div class="d-flex flex-row gap-3 font-2 align-items-center">
                                     <i class="fa-solid fa-angles-right accent-color"></i>
                                     <a href="portfolio_grid.html">
-                                        <span class="text-gray">1ère édition du concert « Nostalgia au Nord », House Of
-                                            Events.</span>
+                                        <span class="text-gray">Concert Nostalgia</span>
                                     </a>
                                 </div>
                                 <div class="d-flex flex-row gap-3 font-2 align-items-center">
@@ -461,49 +523,59 @@
 
 
 
-
-
-
         <section class="py-5 position-relative">
             <div class="r-container">
                 <div class="divider mb-3 center-text">
                     <h6 class="text-white font-2 deeev">Nos références:</h6><br><br>
                 </div>
-                <div class="row row-cols-1 row-cols-lg-4 position-relative">
-                    <div class="col mb-3 mb-lg-0">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <div class="mb-3 mb-lg-0">
-                                <img src="image/logo-ipsum2.png" alt="" class="img-fluid">
-                            </div>
+        
+                <div id="referenceCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/brands/AQUAFINA.png" alt="AQUAFINA" class="img-fluid reference-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/brands/CUMAREX.png" alt="CUMAREX" class="img-fluid reference-img">
+                        </div>
+                        <!-- Add more carousel items for each reference image -->
+                        <div class="carousel-item">
+                            <img src="image/brands/fit one .png" alt="Fit One" class="img-fluid reference-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/brands/INDOMIE .png" alt="INDOMIE" class="img-fluid reference-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/brands/itoys.png" alt="iToys" class="img-fluid reference-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/brands/logo-carrion-cafe.png" alt="Carrion Cafe" class="img-fluid reference-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/brands/s+.png" alt="S+" class="img-fluid reference-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/brands/S1.png" alt="S1" class="img-fluid reference-img">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="image/brands/sada tetouan.png" alt="Sada Tetouan" class="img-fluid reference-img">
                         </div>
                     </div>
-                    <div class="col mb-3 mb-lg-0">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <div class="mb-3 mb-lg-0">
-                                <img src="image/logo-ipsum1.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3 mb-lg-0">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <div class="mb-3 mb-lg-0">
-                                <img src="image/logo-ipsum5.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3 mb-lg-0">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <div class="mb-3 mb-lg-0">
-                                <img src="image/logo-ipsum6.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-
+                    <a class="carousel-control-prev" href="#referenceCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#referenceCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
         </section>
-
-
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
     </main>
 
     <!-- Footer -->

@@ -79,7 +79,7 @@ ul {
 }
 
 img {
-    object-fit: cover;
+  object-fit: cover;
 }
 
 section {
@@ -500,6 +500,11 @@ header.header-2 .top-header {
       padding: 10px 0px;
     }
   }
+
+  .centerrr {
+    text-align: center;
+}
+  
   header.header-4 .top-header .header-cta ul {
     margin: 0;
     padding: 0;
